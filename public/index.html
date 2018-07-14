@@ -5,9 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Websockets Chat App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>You see me!</h1>
+    <div id="my-chat">
+        <div id="chat-window">
+            <div id="output">
+
+            </div>
+        </div>
+        <input type="text" id="handle" placeholder="Handle" />
+        <input type="text" id="message" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+    <script src="chat.js"></script>
 </body>
 </html>
